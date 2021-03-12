@@ -21,7 +21,7 @@ class Melon(object):
         robots.cleanerbot.clean(self)
         robots.stickerbot.apply_logo(self)
 
-    def __str__(self):
+    def __str__(self): #def ___repr___(self)
         """Print out information about melon."""
 
         if self.weight <= 0:
@@ -39,4 +39,9 @@ class Squash(Melon):
 
         super().prep() #give a squash class(baby) a special 'prep' procedure, all the mom plus, prep added
         robots.painterbot.paint(self)
-        
+
+
+test_squash = Melon('Squash') #test squash is a made up variable to run my new class(nombre de uno de los de la lista)
+test_squash.prep() #test.nueva orden() no olvides parentesis
+other_test = Melon('Watermelon') #otro ejemplo, tiene otra variable nombre
+other_test.prep()
