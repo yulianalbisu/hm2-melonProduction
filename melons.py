@@ -34,10 +34,9 @@ class Melon(object):
 # FIXME: Add Squash class definition here.
 
 class Squash(Melon):
-    pass
     
+    def prep(self): #defining the special 'prep' procedure
 
-    def painting_process(self)
-        super().melon_type(Squash)
+        super().prep() #give a squash class(baby) a special 'prep' procedure, all the mom plus, prep added
         robots.painterbot.paint(self)
         

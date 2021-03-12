@@ -1,7 +1,7 @@
 """Shipping procedures for Ubermelon."""
 
-from melons import Melon, Squash
-import robots
+from melons import Melon, Squash #first import the files we will use from another file
+import robots 
 import sys
 
 MELON_LIMIT = 200
@@ -98,7 +98,7 @@ def assess_and_pack_orders():
                 continue
 
         print("------")
-        print("Robots Picked {} {} for order of {}".format(count, melon_type, quantity))
+        print("Robots Picked {count:,} {} for order of {}".format(count, melon_type, quantity))
 
         # Pack the melons for shipping
         boxes = robots.packerbot.pack(melons)
